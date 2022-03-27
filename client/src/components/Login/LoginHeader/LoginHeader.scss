@@ -1,0 +1,8 @@
+.login-header{
+    padding-top: 3rem;
+    text-align: center;
+    h4{
+        font-family: var(--titleFont);
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+}

@@ -1,0 +1,51 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 300ms forwards ease-in-out;
+    opacity: 0;
+    .login{
+        background-color: var(--white);
+        width: clamp(20rem, 60vw, 40rem);
+        border-radius: 1rem;
+        padding: 1.5%;
+        position: relative;
+        .login-btn{
+            display: block;
+            margin: 2rem auto;
+            width: 90%;
+        }
+        .error{
+            text-align: center;
+            color: var(--red);
+            margin: 2rem;
+            font-family: var(--textFont);
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
+        }
+        .exit-menu{
+            font-family: var(--textFont);
+            font-size: 1.2rem;
+            position: absolute;
+            background-color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 50%;
+            box-shadow: 0 0 3px var(--black);
+            top: -15px;
+            right: -15px;
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    100%{
+        opacity: 1;    
+    }
+}

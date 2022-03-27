@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans&display=swap');
+
+// Variables
+:root{
+    --black: #000;
+    --grey: #999;
+    --lightRed: #DA2F37;
+    --lighterRed: #f31f29;
+    --red: rgb(220, 0, 0);
+    --white: #fff;
+    --yellow: rgb(255, 255, 43);
+    
+    --maxWidth: 62.5rem;
+    
+    --titleFont: 'Amatic SC', cursive;
+    --textFont: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+@import 'global-classes';
+
+.main-content{
+    max-width: var(--maxWidth);
+    margin: auto;
+    padding: 1.5%;
+    min-height: 100vh;
+}

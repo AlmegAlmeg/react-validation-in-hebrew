@@ -1,0 +1,35 @@
+.loadin-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    .circle{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 50%;
+        animation: rotateMe 1000ms infinite;
+        position: absolute;
+        &::after{
+            position: absolute;
+            content: '';
+            background-color: rgb(50, 161, 180);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            transform: rotateZ(45deg);
+        }
+    }
+}
+
+@keyframes rotateMe {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

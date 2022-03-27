@@ -1,0 +1,12 @@
+.form-top{
+    font-family: var(--textFont);
+    .ft-flexbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        a{
+            color: var(--lightRed);
+        }
+    }
+}

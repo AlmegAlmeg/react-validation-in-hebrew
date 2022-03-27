@@ -1,0 +1,22 @@
+.form-input{
+    label{
+        position: relative;
+        top: 25px;
+        right: 5px;
+        font-size: clamp(0.8rem, 1.5vw, 1rem);
+    }
+    input{
+        width: 100%;
+        min-height: 2rem;
+        padding: 1.3rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid var(--grey);
+    }
+    .field-required{
+        color: var(--red);
+    }
+    .input-error{
+        margin-top: 0.5rem;
+        color: var(--red);
+    }
+}

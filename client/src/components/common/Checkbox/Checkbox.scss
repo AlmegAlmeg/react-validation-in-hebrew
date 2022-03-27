@@ -1,0 +1,9 @@
+.checkbox{
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    label{
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+    }
+}

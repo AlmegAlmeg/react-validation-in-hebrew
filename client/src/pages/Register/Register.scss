@@ -1,0 +1,24 @@
+.register{
+    width: 100%;
+    .register-buttons{
+        margin-top: 2rem;
+        font-family: var(--textFont);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            color: var(--lightRed);
+            text-decoration: none;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
+        }
+    }
+    .errors{
+        margin-top: 1rem;
+        font-family: var(--textFont);
+        text-align: center;
+        color: var(--red);
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+        font-weight: 900;
+        background-color: var(--yellow);
+    }
+}

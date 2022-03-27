@@ -1,0 +1,50 @@
+//! The letter g stands for 'global'
+
+.g-flexbox-aic{
+    display: flex;
+    align-items: center;
+}
+
+.g-filled-btn{
+    font-size: clamp(1rem, 2.5vw, 1.7rem);
+    color: var(--white);
+    background-color: var(--lightRed);
+    font-family: var(--textFont);
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 300ms;
+    &:hover{
+        background-color: var(--lighterRed);
+    }
+}
+
+.g-disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.g-text-red{
+    color: var(--lightRed);
+}
+
+.g-4-col-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2rem;
+}
+
+.g-col-4{
+    grid-column: span 4;
+}
+
+.g-col-2{
+    grid-column: span 2;
+}
+
+.g-col-1{
+    grid-column: span 1;
+}
+
